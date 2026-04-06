@@ -1,0 +1,35 @@
+[
+    {
+        "menuID": 1,
+        "menuName": "프로젝트",
+        "menuParentID": null,
+        "menuType": 1
+    },
+    {
+        "menuID": 2,
+        "menuName": "시스템",
+        "menuParentID": null,
+        "menuType": 1
+    },
+    {
+        "menuID": 3,
+        "menuName": "프로젝트 관리",
+        "menuParentID": 1,
+        "menuType": 2,
+        "menuUrl": "/pages/page01/page01.tsx"
+    },
+    {
+        "menuID": 4,
+        "menuName": "메뉴1_4(화면)",
+        "menuParentID": 1,
+        "menuType": 2,
+        "menuUrl": "/pages/page02"
+    },
+    {
+        "menuID": 5,
+        "menuName": "메뉴1_5(화면)",
+        "menuParentID": 1,
+        "menuType": 2,
+        "menuUrl": "/pages/page03"
+    }
+]

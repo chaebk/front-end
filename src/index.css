@@ -1,0 +1,71 @@
+/* ── Custom variables mapped to DevExtreme theme variables ── */
+:root {
+  --bg: var(--dx-color-main-bg);
+  --bg-component: var(--dx-component-color-bg);
+  --text: var(--dx-color-text);
+  --text-h: var(--dx-color-text);
+  --border: var(--dx-color-border);
+  --separator: var(--dx-color-separator);
+  --accent: var(--dx-color-primary);
+  --accent-bg: color-mix(in srgb, var(--dx-color-primary) 12%, transparent);
+  --shadow: 0 4px 16px color-mix(in srgb, var(--dx-color-shadow) 30%, transparent);
+
+  --sans: "Segoe UI", system-ui, Roboto, sans-serif;
+  --heading: "Segoe UI", system-ui, Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  --base-font-size: 12px;
+
+  font: var(--base-font-size)/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--bg-component);
+  border-radius: 4px;
+  color: var(--text-h);
+}

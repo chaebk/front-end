@@ -1,0 +1,96 @@
+// ─── Ribbon ─────────────────────────────────────────────────────────────────
+.app-ribbon {
+  display: flex;
+  align-items: stretch;
+  padding: 4px 12px 0;
+  background: var(--bg-component);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  gap: 4px;
+}
+
+// ─── Ribbon Group ───────────────────────────────────────────────────────────
+.ribbon-group {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  margin-right: 4px;
+  border-right: 1px solid var(--border);
+
+  &:last-child {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+.ribbon-group-buttons {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  flex: 1;
+  padding-bottom: 3px;
+}
+
+.ribbon-group-label {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text);
+  opacity: 0.6;
+  padding: 2px 0 4px;
+  border-top: 1px solid var(--border);
+  margin-top: 2px;
+  user-select: none;
+}
+
+// ─── Ribbon Button ──────────────────────────────────────────────────────────
+.ribbon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 9px 3px;
+  min-width: 50px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.12s;
+
+  &:hover {
+    background: var(--accent-bg);
+  }
+
+  &:active {
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+  }
+}
+
+.btn-icon {
+  display: block;
+  line-height: 1;
+}
+
+.btn-label-row {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.btn-label {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.btn-chevron {
+  opacity: 0.55;
+  margin-left: 2px;
+}
+
+// ─── Content Area ───────────────────────────────────────────────────────────
+.app-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
